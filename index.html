@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bad Advice 8-Ball</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Bad Advice 8-Ball</h1>
+    <p class="subtitle">Ask a yes/no question. Receive terrible guidance.</p>
+  </header>
+
+  <section aria-labelledby="people-label">
+    <p class="people-label" id="people-label">Pick who answers</p>
+    <div class="people" id="people"></div>
+  </section>
+
+  <div class="stage">
+    <button class="ball" id="ball" type="button" aria-label="Shake the 8-ball">
+      <span class="window" id="mouth">
+        <span class="triangle show" id="triangle">
+          <span class="answer" id="answer" aria-live="polite">Ask me anything</span>
+        </span>
+      </span>
+      <span class="face" id="face" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <form class="ask" id="ask-form" autocomplete="off">
+    <label class="sr-only" for="question">Your question</label>
+    <input id="question" type="text" maxlength="120" placeholder="Should I start my assignment today?">
+    <button type="submit" id="shake-btn">Shake</button>
+  </form>
+
+  <p class="hint" id="hint" aria-live="polite">Tip: you can also click the ball.</p>
+
+  <p class="footer">Parody for entertainment only. These are not real quotes. Please do not follow this advice.</p>
+</main>
+
+<script src="js/people.js"></script>
+<script src="js/faces.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
